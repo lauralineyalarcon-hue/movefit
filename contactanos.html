@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Contacta con MOVE FIT. Estamos aquí para resolver tus dudas sobre productos, pedidos y nuestra colección deportiva.">
+
+    <title>Contáctanos | MOVE FIT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================ ENCABEZADO ================ -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="index.html" class="logo">
+                MOVE <span>FIT</span>
+            </a>
+
+            <nav class="nav" id="mainNav">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="productos.html">Productos</a>
+
+                <a href="nosotros.html">Nosotros</a>
+
+                <a href="contactanos.html" class="active">
+                    Contáctanos
+                </a>
+
+            </nav>
+
+            <div class="header-actions">
+
+                <a href="carrito.html" class="cart-link">
+
+                    <span class="cart-icon">🛍️</span>
+
+                    <span>Carrito</span>
+
+                    <span class="cart-counter" id="cartCounter">
+                        0
+                    </span>
+
+                </a>
+
+                <button
+                    class="menu-toggle"
+                    id="menuToggle"
+                    type="button"
+                    aria-label="Abrir menú">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================ CONTENIDO PRINCIPAL ================ -->
+
+    <main>
+
+        <!-- BANNER -->
+
+        <section class="page-banner">
+
+            <div class="container">
+
+                <span class="section-tag">
+                    ESTAMOS PARA AYUDARTE
+                </span>
+
+                <h1>
+                    Hablemos
+                </h1>
+
+                <p>
+                    ¿Tienes preguntas sobre nuestros productos o necesitas
+                    ayuda con tu pedido? Nos encantará escucharte.
+                </p>
+
+                <div class="breadcrumb">
+
+                    <a href="index.html">Inicio</a>
+
+                    <span>/</span>
+
+                    <span>Contáctanos</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================ FORMULARIO Y DATOS ================ -->
+
+        <section class="section contact-section">
+
+            <div class="container">
+
+                <div class="contact-layout">
+
+
+                    <!-- FORMULARIO -->
+
+                    <div class="contact-form-container">
+
+                        <span class="section-tag">
+                            ESCRÍBENOS
+                        </span>
+
+                        <h2>
+                            Envíanos un mensaje
+                        </h2>
+
+                        <p class="contact-intro">
+                            Completa el formulario y cuéntanos cómo
+                            podemos ayudarte.
+                        </p>
+
+
+                        <form id="contactForm" class="contact-form">
+
+                            <!-- NOMBRE -->
+
+                            <div class="form-group">
+
+                                <label for="contactName">
+                                    Nombre completo *
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="contactName"
+                                    name="nombre"
+                                    placeholder="Escribe tu nombre"
+                                    autocomplete="name"
+                                    minlength="2"
+                                    maxlength="80"
+                                    required>
+
+                            </div>
+
+
+                            <!-- CORREO -->
+
+                            <div class="form-group">
+
+                                <label for="contactEmail">
+                                    Correo electrónico *
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="contactEmail"
+                                    name="correo"
+                                    placeholder="tucorreo@ejemplo.com"
+                                    autocomplete="email"
+                                    maxlength="120"
+                                    required>
+
+                            </div>
+
+
+                            <!-- TELÉFONO -->
+
+                            <div class="form-group">
+
+                                <label for="contactPhone">
+                                    Teléfono
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="contactPhone"
+                                    name="telefono"
+                                    placeholder="Tu número de contacto"
+                                    autocomplete="tel"
+                                    maxlength="20">
+
+                            </div>
+
+
+                            <!-- ASUNTO -->
+
+                            <div class="form-group">
+
+                                <label for="contactSubject">
+                                    Motivo de contacto *
+                                </label>
+
+                                <select
+                                    id="contactSubject"
+                                    name="asunto"
+                                    required>
+
+                                    <option value="">
+                                        Selecciona una opción
+                                    </option>
+
+                                    <option value="productos">
+                                        Información sobre productos
+                                    </option>
+
+                                    <option value="pedido">
+                                        Consulta sobre un pedido
+                                    </option>
+
+                                    <option value="tallas">
+                                        Consulta sobre tallas
+                                    </option>
+
+                                    <option value="envios">
+                                        Información sobre envíos
+                                    </option>
+
+                                    <option value="devoluciones">
+                                        Cambios y devoluciones
+                                    </option>
+
+                                    <option value="otro">
+                                        Otro motivo
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MENSAJE -->
+
+                            <div class="form-group">
+
+                                <label for="contactMessage">
+                                    Tu mensaje *
+                                </label>
+
+                                <textarea
+                                    id="contactMessage"
+                                    name="mensaje"
+                                    rows="6"
+                                    placeholder="Cuéntanos en qué podemos ayudarte..."
+                                    minlength="10"
+                                    maxlength="1500"
+                                    required></textarea>
+
+                                <small>
+                                    Máximo 1500 caracteres.
+                                </small>
+
+                            </div>
+
+
+                            <!-- ACEPTACIÓN -->
+
+                            <div class="form-checkbox">
+
+                                <input
+                                    type="checkbox"
+                                    id="contactConsent"
+                                    required>
+
+                                <label for="contactConsent">
+                                    Acepto que mis datos sean utilizados
+                                    para responder a mi consulta.
+                                </label>
+
+                            </div>
+
+
+                            <!-- BOTÓN -->
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary contact-submit">
+
+                                Enviar mensaje
+
+                                <span>→</span>
+
+                            </button>
+
+
+                            <!-- RESPUESTA DEL FORMULARIO -->
+
+                            <div
+                                id="contactFormMessage"
+                                class="form-message"
+                                role="status"
+                                aria-live="polite">
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+
+                    <!-- INFORMACIÓN DE CONTACTO -->
+
+                    <aside class="contact-info">
+
+                        <div class="contact-info-heading">
+
+                            <span class="section-tag">
+                                CONTACTO
+                            </span>
+
+                            <h2>
+                                Estamos aquí para ti.
+                            </h2>
+
+                            <p>
+                                Queremos que tu experiencia con MOVE FIT
+                                sea sencilla y agradable.
+                            </p>
+
+                        </div>
+
+
+                        <!-- CORREO -->
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-icon">
+                                ✉
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Correo electrónico
+                                </h3>
+
+                                <a href="mailto:contacto@movefit.com">
+                                    contacto@movefit.com
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- TELÉFONO -->
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-icon">
+                                ☎
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Teléfono
+                                </h3>
+
+                                <p>
+                                    Comunícate con nuestro equipo.
+                                </p>
+
+                                <span class="contact-placeholder">
+                                    Agrega aquí tu número comercial.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- HORARIOS -->
+
+                        <div class="contact-info-item">
+
+                            <div class="contact-info-icon">
+                                ◷
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Horario de atención
+                                </h3>
+
+                                <p>
+                                    Lunes a viernes
+                                </p>
+
+                                <p>
+                                    8:00 a. m. – 6:00 p. m.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REDES SOCIALES -->
+
+                        <div class="contact-social">
+
+                            <h3>
+                                Síguenos
+                            </h3>
+
+                            <p>
+                                Conoce nuestras novedades y colecciones.
+                            </p>
+
+                            <div class="social-links">
+
+                                <a
+                                    href="#"
+                                    aria-label="Instagram">
+
+                                    Instagram
+
+                                </a>
+
+                                <a
+                                    href="#"
+                                    aria-label="Facebook">
+
+                                    Facebook
+
+                                </a>
+
+                                <a
+                                    href="#"
+                                    aria-label="TikTok">
+
+                                    TikTok
+
+                                </a>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- IMAGEN -->
+
+                        <div class="contact-image">
+
+                            <img
+                                src="https://loremflickr.com/800/600/woman,fitness,sportswear?lock=501"
+                                alt="Ropa deportiva femenina">
+
+                            <div class="contact-image-caption">
+
+                                <strong>
+                                    MOVE FIT
+                                </strong>
+
+                                <span>
+                                    Muévete a tu manera.
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================ PREGUNTAS FRECUENTES ================ -->
+
+        <section class="section faq-section">
+
+            <div class="container">
+
+                <div class="section-heading centered">
+
+                    <span class="section-tag">
+                        PREGUNTAS FRECUENTES
+                    </span>
+
+                    <h2>
+                        ¿Cómo podemos ayudarte?
+                    </h2>
+
+                    <p>
+                        Aquí encontrarás respuestas a algunas
+                        de las preguntas más comunes.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+
+                    <!-- PREGUNTA 1 -->
+
+                    <details class="faq-item">
+
+                        <summary>
+                            ¿Cómo puedo comprar un producto?
+                        </summary>
+
+                        <p>
+                            Visita nuestra sección de productos,
+                            elige el artículo que te guste, selecciona
+                            las opciones disponibles y agrégalo al carrito.
+                        </p>
+
+                    </details>
+
+
+                    <!-- PREGUNTA 2 -->
+
+                    <details class="faq-item">
+
+                        <summary>
+                            ¿Cómo puedo consultar las tallas?
+                        </summary>
+
+                        <p>
+                            En cada producto podrás consultar las tallas
+                            disponibles. Revisa las opciones antes de
+                            agregar el artículo al carrito.
+                        </p>
+
+                    </details>
+
+
+                    <!-- PREGUNTA 3 -->
+
+                    <details class="faq-item">
+
+                        <summary>
+                            ¿Puedo consultar sobre un pedido?
+                        </summary>
+
+                        <p>
+                            Sí. Selecciona la opción de consulta sobre
+                            pedidos en el formulario y describe tu caso
+                            para que el equipo pueda orientarte.
+                        </p>
+
+                    </details>
+
+
+                    <!-- PREGUNTA 4 -->
+
+                    <details class="faq-item">
+
+                        <summary>
+                            ¿Qué hago si tengo un problema con un producto?
+                        </summary>
+
+                        <p>
+                            Puedes comunicarte con nosotros mediante
+                            el formulario de contacto. Describe el
+                            inconveniente y te indicaremos los pasos
+                            disponibles para recibir asistencia.
+                        </p>
+
+                    </details>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================ LLAMADO A LA ACCIÓN ================ -->
+
+        <section class="about-cta">
+
+            <div class="container">
+
+                <span class="section-tag">
+                    MOVE FIT
+                </span>
+
+                <h2>
+                    Encuentra lo que necesitas para moverte.
+                </h2>
+
+                <p>
+                    Explora nuestra colección de ropa deportiva,
+                    tenis y accesorios.
+                </p>
+
+                <a
+                    href="productos.html"
+                    class="btn btn-primary">
+
+                    Ver productos
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================ PIE DE PÁGINA ================ -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="index.html" class="logo footer-logo">
+                    MOVE <span>FIT</span>
+                </a>
+
+                <p>
+                    Ropa deportiva femenina para mujeres que
+                    quieren moverse, entrenar y sentirse ellas mismas.
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#" aria-label="Instagram">
+                        Instagram
+                    </a>
+
+                    <a href="#" aria-label="Facebook">
+                        Facebook
+                    </a>
+
+                    <a href="#" aria-label="WhatsApp">
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Comprar</h3>
+
+                <a href="productos.html">
+                    Todos los productos
+                </a>
+
+                <a href="productos.html?categoria=tops">
+                    Tops
+                </a>
+
+                <a href="productos.html?categoria=leggings">
+                    Leggings
+                </a>
+
+                <a href="productos.html?categoria=tenis">
+                    Tenis
+                </a>
+
+                <a href="productos.html?categoria=accesorios">
+                    Accesorios
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>MOVE FIT</h3>
+
+                <a href="nosotros.html">
+                    Nosotros
+                </a>
+
+                <a href="contactanos.html">
+                    Contáctanos
+                </a>
+
+                <a href="carrito.html">
+                    Mi carrito
+                </a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contacto</h3>
+
+                <p>
+                    Lunes a viernes
+                </p>
+
+                <p>
+                    8:00 a. m. – 6:00 p. m.
+                </p>
+
+                <a href="mailto:contacto@movefit.com">
+                    contacto@movefit.com
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    © 2026 MOVE FIT. Todos los derechos reservados.
+                </p>
+
+                <p>
+                    Diseñado para moverte.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================ ELEMENTOS DE JAVASCRIPT ================ -->
+
+    <button
+        id="backToTop"
+        class="back-to-top"
+        type="button"
+        aria-label="Volver arriba">
+
+        ↑
+
+    </button>
+
+
+    <div
+        id="toast"
+        class="toast"
+        role="status"
+        aria-live="polite">
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
